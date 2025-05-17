@@ -125,6 +125,7 @@ end
 end
 
 %for inlet flow from as a central jet
+%the section ahead controls the size of the jet. The only modification in this case is that we only give an initial velocity at the inlet to a few central boudnary points.
 for n = 1:Nx*Ny
      t = 0.4*Ny*Nx;
      if (n > t + 0.4*Nx) && ( n <= t + 0.6*Nx) ...
