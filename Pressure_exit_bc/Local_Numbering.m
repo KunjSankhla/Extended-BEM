@@ -1,6 +1,6 @@
 function D = Local_Numbering(N)
 % This function corresponds the global numbering to a local numbering
-% system with respect to each surfacec only.
+% system with respect to each surface only.
 run("Inputs_Grids.m")
 % checking for which surface it is using the convention used in local
 % numbering
@@ -44,5 +44,6 @@ elseif(surface == 7)
     D = N - N_s6_s5_s4_s3_s2_s1;
 
 end
+
 
 end
